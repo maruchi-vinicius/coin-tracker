@@ -41,7 +41,7 @@ export function App() {
       {
         filteredCoins.map((coin) => {
           return(
-            <CoinDisplay key={coin.symbol} name={coin.name} icon={coin.icon} price={coin.price} symbol={coin.symbol} />
+            <CoinDisplay key={coin.symbol} name={coin.name} icon={coin.icon} price={coin.price.toFixed(4)} symbol={coin.symbol} />
             )      
         })
       }

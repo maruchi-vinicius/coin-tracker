@@ -7,7 +7,7 @@ export function CoinDisplay({name, icon, price, symbol}:any) {
                 <h1 className="font-extrabold text-2xl"> {name} </h1>
                 <img src={icon} alt="Coin icon" width={70}/>
                 <span className="font-bold"> Symbol: {symbol} </span>
-                <span className="font-bold"> Price: {price} </span>
+                <span className="font-bold"> Price: {`$${price}`} </span>
             </div>
         </div>
     )
